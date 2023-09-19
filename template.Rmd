@@ -1,0 +1,21 @@
+---
+title: "Simple document"
+output: github_document
+---
+```{r}
+library(tidyverse)
+
+```
+
+
+let's import the `FAS_litters.csv` csv.
+
+```{r}
+litters_df = 
+    read_csv("data/FAS_litters.csv")
+
+litters_df = 
+  janitor::clean_names(litters_df)
+
+```
+
